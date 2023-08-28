@@ -39,6 +39,13 @@ head(lobster_abundance)
 tail(lobster_abundance)
 
 ## Which time of day?
-unique(lobster_abundance$SITE)
+unique(lobster_abundance$SIZE_MM)
+```
+
+## Deal with missing values
+
+```{r}
+lobster_abundance <- lobster_abundance %>% 
+  mutate(SIZE_MM = na_if(SIZE_MM, -99999 )) 
 ```
 
