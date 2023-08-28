@@ -1,0 +1,44 @@
+---
+title: "ex_4.1"
+format: html
+editor: visual
+---
+
+```{r}
+library(readr)
+library(dplyr)
+library(janitor)
+library(ggplot2)
+library(tidyr)
+```
+
+
+## read data
+
+```{r}
+lobstr_dat <- read_csv("https://portal.edirepository.org/nis/dataviewer?packageid=knb-lter-sbc.77.8&entityid=f32823fba432f58f66c06b589b7efac6") %>% 
+    janitor::clean_names() ## Introducing this new package!
+
+```
+
+```{r}
+lobster_abundance <- read_csv("data/Lobster_Abundance_All_Years_20220829.csv")
+```
+```{r}
+## Check out column names
+colnames(lobster_abundance)
+
+## Peak at each column and class
+glimpse(lobster_abundance)
+
+## From when to when
+range(lobster_abundance$DATE)
+
+## First and last rows
+head(lobster_abundance)
+tail(lobster_abundance)
+
+## Which time of day?
+unique(lobster_abundance$SITE)
+```
+
