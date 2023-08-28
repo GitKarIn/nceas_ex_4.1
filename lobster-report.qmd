@@ -1,6 +1,13 @@
 ---
 title: "lobster-report"
 format: html
-editor: visual
+authors: Karrin Alstad and Chris Kwan
 ---
 
+## Report Overview
+
+This is a report describing a lobster abundance dataset from the Santa Barbara Coastal LTER.  Data on abundance, size and fishing pressure of California spiny lobster (Panulirus interruptus) are collected along the mainland coast of the Santa Barbara Channel.
+
+## Citation
+
+Santa Barbara Coastal LTER, D. Reed, and R. Miller. 2022. SBC LTER: Reef: Abundance, size and fishing effort for California Spiny Lobster (Panulirus interruptus), ongoing since 2012 ver 8. Environmental Data Initiative. https://doi.org/10.6073/pasta/25aa371650a671bafad64dd25a39ee18 (Accessed 2023-08-28).
